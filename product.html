@@ -1,59 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Fontawesome link -->
-     <script src="https://kit.fontawesome.com/1d68a8fcd4.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1d68a8fcd4.js" crossorigin="anonymous"></script>
+
+    <!-- Sofia Sans Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Caveat:wght@400..700&family=Commissioner:wght@100..900&family=Cookie&family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Federant&family=Fjalla+One&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Gloria+Hallelujah&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN+Guides&family=Playwrite+NZ+Basic:wght@100..400&family=Playwrite+NZ:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Shadows+Into+Light&family=Smooch+Sans:wght@100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Syne:wght@400..800&family=Tapestry&family=Titan+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products Page</title>
     <link rel="stylesheet" href="product.css">
 </head>
+
 <body>
     <header>
-        <h1>Our Products</h1>
+        <h1>🥤 Our Premium Juices</h1>
+        <p class="tagline">Fresh, Natural & Delicious</p>
     </header>
     <main>
         <div class="products">
             <div class="product">
-                <img src="Images/Chia seeds juice.jpg" alt="Chia Seeds Juice">
-                <h2 id="fruitname">Chia Seeds Juice</h2>
-                <p id="tags">A refreshing juice made with chia seeds, packed with nutrients and omega-3 fatty acids.</p>
-                <span>$ 25.00</span>
-                <div class="stars" id="stars">
-                    <i class="fa-regular fa-stars"></i>
-                    <i class="fa-solid fa-stars"></i>
-                    <i class="fa-solid fa-stars"></i>
-                    <i class="fa-solid fa-stars"></i>
-                    <i class="fa-solid fa-stars"></i>
+                <div class="product-header">
+                    <img src="Images/Chia seeds juice.jpg" alt="Chia Seeds Juice">
+                    <i class="fa-regular fa-heart heart-icon" id="heart"></i>
+                </div>
+                <div class="product-body">
+                    <h2 id="fruitname">Chia Seeds Juice</h2>
+                    <p id="tags">A refreshing juice made with chia seeds, packed with nutrients and omega-3 fatty acids.</p>
+                    <div class="rating-section">
+                        <div class="stars" id="stars">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="price">$ 25.00</span>
+                    </div>
+                    <button class="btn-add-to-cart">Add to Cart</button>
                 </div>
             </div>
             <div class="product">
-                <img src="Images/Grape fruit juice.jpg" alt="Grapefruit Juice">
-                <h2 id="fruitname">Grapefruit Juice</h2>
-                <p id="tags">Tangy and sweet grapefruit juice, perfect for a healthy start to your day.</p>
-                <span>$ 25.00</span>
-                <div class="stars" id="stars">
-                    <i class="fa-regular fa-stars"></i>
-                    <i class="fa-solid fa-stars"></i>
-                    <i class="fa-solid fa-stars"></i>
-                    <i class="fa-solid fa-stars"></i>
-                    <i class="fa-solid fa-stars"></i>
+                <div class="product-header">
+                    <img src="Images/Grape fruit juice.jpg" alt="Grapefruit Juice">
+                    <i class="fa-regular fa-heart heart-icon" id="heart"></i>
+                </div>
+                <div class="product-body">
+                    <h2 id="fruitname">Grapefruit Juice</h2>
+                    <p id="tags">Tangy and sweet grapefruit juice, perfect for a healthy start to your day.</p>
+                    <div class="rating-section">
+                        <div class="stars" id="stars">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="price">$ 25.00</span>
+                    </div>
+                    <button class="btn-add-to-cart">Add to Cart</button>
                 </div>
             </div>
             <div class="product">
-                <img src="Images/Lemon Juice.jpg" alt="Lemon Juice">
-                <h2 id="fruitname">Lemon Juice</h2>
-                <p id="tags">Freshly squeezed lemon juice, ideal for cocktails, teas, or as a natural detox drink.</p>
-                <span>$ 25.00</span>
-                <div class="stars" id="stars">
-                    <i class="fa-regular fa-stars"></i>
-                    <i class="fa-solid fa-stars"></i>
-                    <i class="fa-solid fa-stars"></i>
-                    <i class="fa-solid fa-stars"></i>
-                    <i class="fa-solid fa-stars"></i>
+                <div class="product-header">
+                    <img src="Images/Lemon Juice.jpg" alt="Lemon Juice">
+                    <i class="fa-regular fa-heart heart-icon" id="heart"></i>
+                </div>
+                <div class="product-body">
+                    <h2 id="fruitname">Lemon Juice</h2>
+                    <p id="tags">Freshly squeezed lemon juice, ideal for cocktails, teas, or as a natural detox drink.</p>
+                    <div class="rating-section">
+                        <div class="stars" id="stars">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="price">$ 25.00</span>
+                    </div>
+                    <button class="btn-add-to-cart">Add to Cart</button>
                 </div>
             </div>
         </div>
     </main>
 </body>
+
 </html>
