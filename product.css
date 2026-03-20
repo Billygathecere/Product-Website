@@ -27,6 +27,40 @@ header {
     text-align: center;
     padding: 2.5rem 1rem;
     box-shadow: var(--shadow);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-link {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.cart-link:hover {
+    transform: scale(1.1);
+}
+
+#cart-count {
+    background: white;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 header h1 {
